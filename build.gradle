@@ -30,5 +30,6 @@ dependencies {
     // spring
     compile "$springframeworkBootGroup:spring-boot-starter-web:$springframeworkBootVersion"
 
+    runtime "$webjarsGroup:bootstrap:3.3.7"
     runtime "$webjarsGroup:angularjs:1.4.9"
 }

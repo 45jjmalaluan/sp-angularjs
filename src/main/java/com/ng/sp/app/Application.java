@@ -10,7 +10,9 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
  * Main spring boot application executor.
  */
 @EnableAutoConfiguration
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {
+    "com.ng.sp.comm.listener"
+})
 public class Application extends SpringBootServletInitializer {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
