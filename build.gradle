@@ -1,0 +1,34 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+
+sourceCompatibility = 1.7
+
+buildscript {
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.1.RELEASE")
+    }
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+ext {
+    // spring
+    springframeworkBootGroup = 'org.springframework.boot'
+    springframeworkBootVersion = '1.5.2.RELEASE'
+
+    webjarsGroup = 'org.webjars'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // spring
+    compile "$springframeworkBootGroup:spring-boot-starter-web:$springframeworkBootVersion"
+
+    runtime "$webjarsGroup:angularjs:1.4.9"
+}
