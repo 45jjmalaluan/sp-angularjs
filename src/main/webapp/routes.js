@@ -4,4 +4,9 @@ spApp.config(function ($routeProvider) {
             templateUrl: 'pages/home.html',
             controller: 'homeController'
         })
+
+        .when('/products', {
+            templateUrl: 'pages/products.html',
+            controller: 'productsController'
+        })
 });
