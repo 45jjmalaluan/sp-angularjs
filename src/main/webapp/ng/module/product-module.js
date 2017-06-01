@@ -1,1 +1,3 @@
-var product = angular.module('product', [] );
+var product = angular.module('product', [
+    'ngResource'
+]);

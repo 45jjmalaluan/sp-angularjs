@@ -1,13 +1,13 @@
 <div class="page-title">Product List</div>
 
 <div>
-    <div id="products" class="row list-group">
-        <div class="item  col-xs-4 col-lg-4" ng-repeat="product in productDtos">
+    <div class="row list-group">
+        <div class="item col-xs-4 col-lg-4" ng-repeat="product in productDtos">
             <div class="thumbnail">
                 <div class="caption">
                     <ul>
-                        <li>Id: ${product.id}</li>
-                        <li>Description: ${product.description}</li>
+                        <li>Id: {{product.id}}</li>
+                        <li>Description: {{product.description}}</li>
                     </ul>
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
