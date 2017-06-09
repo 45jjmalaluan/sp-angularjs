@@ -9,4 +9,14 @@ spApp.config(function ($routeProvider) {
             templateUrl: 'pages/products.html',
             controller: 'productsController'
         })
+
+        .when('/cart/product/:id', {
+            templateUrl: 'pages/cart.html',
+            controller: 'cartItemController'
+        })
+
+        .when('/cart', {
+            templateUrl: 'pages/cart.html',
+            controller: 'cartItemController'
+        })
 });

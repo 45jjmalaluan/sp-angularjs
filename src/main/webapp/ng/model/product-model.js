@@ -1,8 +1,8 @@
 product.factory('Product', function() {
-    function Product(id, description, price) {
-        this.id = id;
-        this.description = description;
-        this.price = price;
+    function Product() {
+        this.id;
+        this.description;
+        this.price;
     };
 
     Product.prototype.fromJson = function(json) {
@@ -10,7 +10,14 @@ product.factory('Product', function() {
         this.id = json.id;
         this.description = json.description;
         this.price = json.price;
-    }
+    };
+
+    Product.prototype.fromData = function(data) {
+        var self = this;
+        this.id = data.id;
+        this.description = data.description;
+        this.price = data.price;
+    };
 
     return Product;
 });
